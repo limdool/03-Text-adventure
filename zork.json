@@ -1,0 +1,274 @@
+{
+    "verbs": [
+      {
+        "v": "EXITS",
+        "map": "EXITS"
+      },
+      {
+        "v": "QUIT",
+        "map": "QUIT"
+      },
+      {
+        "v": "Q",
+        "map": "QUIT"
+      },
+      {
+        "v": "GET ME OUT OF HERE!",
+        "map": "QUIT"
+      },
+      {
+        "v": "North",
+        "map": "North"
+      },
+      {
+        "v": "N",
+        "map": "North"
+      },
+      {
+        "v": "South",
+        "map": "South"
+      },
+      {
+        "v": "S",
+        "map": "South"
+      },
+      {
+        "v": "East",
+        "map": "East"
+      },
+      {
+        "v": "E",
+        "map": "East"
+      },
+      {
+        "v": "West",
+        "map": "West"
+      },
+      {
+        "v": "W",
+        "map": "West"
+      },
+      {
+        "v": "EXIT",
+        "map": "EXIT"
+      }
+    ],
+    "rooms": {
+      "CHous": {
+        "name": "Center of House",
+        "desc": "You are in Center of the House. There are four doors. Each door has different colors: red, pink, yellow, and green. You can slightly hear some animals roaring.",
+        "exits": [
+          {
+            "verb": "North",
+            "target": "RRoom",
+            "condition": ""
+          },
+          {
+            "verb": "South",
+            "target": "PRoom",
+            "condition": ""
+          },
+          {
+            "verb": "West",
+            "target": "YRoom",
+            "condition": ""
+          },
+          {
+            "verb": "East",
+            "target": "GRoom",
+            "condition": ""
+          }
+        ],
+        "inventory": ["mailbox"]
+      },
+      "RRoom": {
+        "name": "Red Room",
+        "desc": "You are in Red Room. You can hear the animals roaring louder in this room. There are four doors. You later realized that the animals are behind one of the doors. ",
+        "exits": [
+          {
+            "verb": "North",
+            "target": "WRoom",
+            "condition": ""
+          },
+          {
+            "verb": "South",
+            "target": "CHous",
+            "condition": ""
+          },
+          {
+            "verb": "West",
+            "target": "NoExit",
+            "condition": ""
+          },
+          {
+            "verb": "East",
+            "target": "BRoom",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "PRoom": {
+        "name": "Pink Room",
+        "desc": "You are in Pink Room. You can see four doors. You began hearing weird noise and smelling something terrible.",
+        "exits": [
+          {
+            "verb": "North",
+            "target": "CHous",
+            "condition": ""
+          },
+          {
+            "verb": "South",
+            "target": "LRoom",
+            "condition": ""
+          },
+          {
+            "verb": "West",
+            "target": "ZRoom",
+            "condition": ""
+          },
+          {
+            "verb": "East",
+            "target": "NoExit",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "YRoom": {
+        "name": "Yellow Room",
+        "desc": "You are in Yellow Room. There are four different doors. You can hear roaring and smell something terrible.",
+        "exits": [
+          {
+            "verb": "North",
+            "target": "NoExit",
+            "condition": ""
+          },
+          {
+            "verb": "South",
+            "target": "ZRoom",
+            "condition": ""
+          },
+          {
+            "verb": "West",
+            "target": "NoExit",
+            "condition": ""
+          },
+          {
+            "verb": "East",
+            "target": "CHous",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "GRoom": {
+        "name": "Green Room",
+        "desc": "You are in Green Room. In this room, you cannot hear any noise. Also, you cannot smell anything bad; however, you are still nervous.",
+        "exits": [
+          {
+            "verb": "North",
+            "target": "BRoom",
+            "condition": ""
+          },
+          {
+            "verb": "South",
+            "target": "NoExit",
+            "condition": ""
+          },
+          {
+            "verb": "West",
+            "target": "CHous",
+            "condition": ""
+          },
+          {
+            "verb": "East",
+            "target": "ARoom",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "BRoom": {
+        "name": "Bathroom",
+        "desc": "You are in Bathroom. You look at yourself in a mirror. You try to smile so you can feel better. You figured out that this bathroom is strange because there are four doors.",
+        "exits": [
+          {
+            "verb": "North",
+            "target": "NoExit",
+            "condition": ""
+          },
+          {
+            "verb": "South",
+            "target": "GRoom",
+            "condition": ""
+          },
+          {
+            "verb": "West",
+            "target": "RRoom",
+            "condition": ""
+          },  
+          {
+            "verb": "East",
+            "target": "DRoom",
+            "condition": ""
+          }     
+        ],
+        "inventory": []
+      },
+      "DROOM": {
+        "name": "Dining Room",
+        "desc": "You are in Dining Room. You see a table and chairs. There were some apples on the table, but you do not want to eat them. You want to leave this house as soon as possible.",
+        "exits": [
+          {
+            "verb": "North",
+            "target": "NoExit",
+            "condition": ""
+          },
+          {
+            "verb": "South",
+            "target": "ARoom",
+            "condition": ""
+          },
+          {
+            "verb": "West",
+            "target": "BRoom",
+            "condition": ""
+          },
+          {
+            "verb": "East",
+            "target": "NoExit",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "LRoom": {
+        "name": "Living Room",
+        "desc": "You are in Living Room. There is a television. On the floor, you can see some comic books. You began feeling you can leave from this house soon. Suddenly, you heard animals roaring loud. It sounds like they starved for a long time.",
+        "exits": [
+          {
+            "verb": "North",
+            "target": "PRoom",
+            "condition": ""
+          },
+          {
+            "verb": "South",
+            "target": "Exit",
+            "condition": ""
+          },
+          {
+            "verb": "West",
+            "target": "NoExit",
+            "condition": ""
+          },
+          {
+            "verb": "East",
+            "target": "TRoom",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      }
+    }
+}
